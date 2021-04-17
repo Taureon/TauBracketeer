@@ -24,4 +24,4 @@ whateverFunctionYouUseItIn(TauBracketeer(
 	Discord //result of 'require("discord.js")'
 ));
 ```
-There are discord-specific features that only work then the three discord-specific arguments are provided.
+There are discord-specific features that only work then the five discord-specific arguments are provided.
