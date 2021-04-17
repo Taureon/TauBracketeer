@@ -17,8 +17,10 @@ For using it in discord
 ```js
 whateverFunctionYouUseItIn(TauBracketeer(
 	theCode,
-	message, //the message object from client.on('message')*/, args /*the message but split on spaces WITHOUT the command that was called!
-	config, //object that has the attribute 'prefix' that has a string that is your bot's prefix
+	message, //the message object from 'client.on("message")'*/
+	args, /*the message content but split on spaces but with the command that was called removed
+	config, //object that has the attribute 'prefix' that has a string in it that is your bot's prefix
+	client, //result of 'new Discord.Client()'
 	Discord //result of 'require("discord.js")'
 ));
 ```
