@@ -18,7 +18,7 @@ For using it in discord
 whateverFunctionYouUseItIn(TauBracketeer(
 	theCode,
 	message, //the message object from 'client.on("message")'*/
-	args, /*the message content but split on spaces but with the command that was called removed
+	args, //the message content but split on spaces but with the command that was called removed
 	config, //object that has the attribute 'prefix' that has a string in it that is your bot's prefix
 	client, //result of 'new Discord.Client()'
 	Discord //result of 'require("discord.js")'
