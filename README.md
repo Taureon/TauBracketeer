@@ -3,10 +3,12 @@ Recreation of RoboTop's Dynamic Responses engine
 ```js
 const TauBracketeer = require('./whereEverItIsIn/TauBracketeer.js');
 
-let string =	'{var|valueA|5}'+
-		'{var|valueB|6}'+
-		'{var|result|{multiply|{valueA}|{valueB}}}'+
-		'{valueA} times {valueB} is equal to {result}!';
+let string = (
+	'{var|valueA|5}'+
+	'{var|valueB|6}'+
+	'{var|result|{multiply|{valueA}|{valueB}}}'+
+	'{valueA} times {valueB} is equal to {result}!'
+);
 
 console.log(TauBracketeer(string));
 //"5 times 6 is equal to 30!"
@@ -20,4 +22,4 @@ whateverFunctionYouUseItIn(TauBracketeer(
 	Discord //result of 'require("discord.js")'
 ));
 ```
-there are discord-specific features that only work then the three discord-specific arguments
+There are discord-specific features that only work then the three discord-specific arguments are provided.
