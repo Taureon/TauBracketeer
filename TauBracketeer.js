@@ -1,6 +1,9 @@
 const functions = require('./functions.js');
 
-module.exports = (code = "", message = {}, args = [], config, client, Discord) => {
+module.exports = (code = "", message = {}, args = [], config = {}, client, Discord) => {
+	
+	//why is the prefix an exclaimation mark? because everyone uses it for some reason (c'mon, be creative, lads)
+	config.prefix = config.prefix || "!";
 
 	//if both of them dont exist, make them an empty attribute object so it doesnt throw an error
 	message.guild = message.guild || {};
