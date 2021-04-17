@@ -3,10 +3,10 @@ Recreation of RoboTop's Dynamic Responses engine
 ```
 const TauBracketeer = require('./whereEverItIsIn/TauBracketeer.js');
 
-let string ='{var|valueA|5}'+
-			'{var|valueB|6}'+
-			'{var|result|{multiply|{valueA}|{valueB}}}'+
-			'{valueA} times {valueB} is equal to {result}!';
+let string =	'{var|valueA|5}'+
+		'{var|valueB|6}'+
+		'{var|result|{multiply|{valueA}|{valueB}}}'+
+		'{valueA} times {valueB} is equal to {result}!';
 
 console.log(TauBracketeer(string));
 //"5 times 6 is equal to 30!"
