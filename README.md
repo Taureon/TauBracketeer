@@ -1,5 +1,5 @@
 # TauBracketeer
-Recreation of RoboTop's Dynamic Responses engine
+Recreation of RoboTop's Dynamic Responses engine (//https://robotop.xyz/customcommands/dynamic)
 ```js
 const TauBracketeer = require('./whereEverItIsIn/TauBracketeer.js');
 
