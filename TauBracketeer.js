@@ -2,8 +2,9 @@ const functions = require('./functions.js');
 
 //https://robotop.xyz/customcommands/dynamic
 
-module.exports = (code = "", message, args, config, client, Discord) => {
+module.exports = (code = "", message = {}, args = [], config, client, Discord) => {
 
+	//if both of them dont exist, make them an empty attribute object so it doesnt throw an error
 	message.guild = message.guild || {};
 	message.member = message.member || {};
 	let tvars = {
