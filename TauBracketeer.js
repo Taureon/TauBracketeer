@@ -90,6 +90,10 @@ module.exports = (code = "", message = {}, args = [], config = {}, client, Disco
 				case "capitalize":
 					return functions.toGrammarCase(array[1], array[2] === "true");
 
+				//url encoder
+				case "url":
+					return encodeURIComponent(array[1]);
+
 				//chooses random string from the array
 				case "choose":
 					array.shift();
