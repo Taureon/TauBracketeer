@@ -56,9 +56,11 @@ module.exports = (code = "", message = {}, args = [], config = {}, client, Disco
 				
 				//sets/gets variable
 				case "var":
-					if (!tvars[array[1]]) return `{${array.join('|')}}`;
-					tvars[array[1]] = array[2];
-					return "";
+					if (typeof array[2] === 'string') {
+						tvars[array[1]] = array[2];
+						return "";
+					}
+					return `{${array.join('|')}}`;
 
 				//if item 1 and item 2 are equal, returns 3rd string, else it returns 4th one
 				case "test":
