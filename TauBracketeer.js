@@ -60,7 +60,7 @@ module.exports = (code = "", message = {}, args = [], config = {}, client, Disco
 						tvars[array[1]] = array[2];
 						return "";
 					}
-					return `{${array.join('|')}}`;
+					return tvars[array[1]];
 
 				//if item 1 and item 2 are equal, returns 3rd string, else it returns 4th one
 				case "test":
