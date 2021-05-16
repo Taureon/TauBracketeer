@@ -41,7 +41,7 @@ module.exports = {
 	//capitalized first letter
 	toFirstCase: str => {
 		if (str.length < 2) return str;
-		str = str[0].toUpperCase() + str.slice(1).toLowerCase;
+		str = str[0].toUpperCase() + str.slice(1).toLowerCase();
 	},
 	
 	//capitalises the first letter of each word if "all" is true, unless "all" isn't, then it acts exactly like toFirstCase
