@@ -57,7 +57,7 @@ module.exports = (code = "", message = {}, args = [], config = {}, bot, Discord)
 					return array[1] / sumMult(array.slice(2).map(Number));
 				case "modulo":
 					array = array.slice(1).map(Number);
-					var num = array[0];
+					var num = array.shift();
 					array.forEach(x => {
 						num %= x
 					});
